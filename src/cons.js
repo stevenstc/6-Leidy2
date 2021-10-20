@@ -6,8 +6,8 @@ const WS = "TN8vDJSTHXWC4hw3YJpYbnd2Rgas8a2Zre";//T9yD14Nj9j7xAB4dbGeiX9h8unkKHx
 
 const SCtest = "TY5ktzXThak4nQGAfpFZxHFcAsTK1DbT1e";// direccion del contrato de pruebas test only no real
 
-const SC = "TXXKemNvepuj1QKqJjjvd6Cjw3ttmM7BXs";// direccion del contrato V1
+const SC = "TUrr2nmEchrME3rve6yZ9NVe9QwTrUqusW";// direccion del contrato V1
 
-const SC2 = "TXXKemNvepuj1QKqJjjvd6Cjw3ttmM7BXs";// direccion del contrato V2
+const SC2 = "TUrr2nmEchrME3rve6yZ9NVe9QwTrUqusW";// direccion del contrato V2
 
 export default {proxy, WS, SCtest, SC, SC2, PRE};
