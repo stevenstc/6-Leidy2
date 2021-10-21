@@ -61,8 +61,8 @@ contract BinarySystem is Admin{
   uint256 public porcientoPay = 100;
 
   uint256 public inversiones = 1;
-  uint256[] public primervez = [0, 0, 0, 0, 0];
-  uint256[] public porcientos = [60, 0, 0, 0, 0];
+  uint256[] public primervez = [100, 0, 0, 0, 0];
+  uint256[] public porcientos = [100, 0, 0, 0, 0];
   uint256[] public porcientosSalida = [20, 10, 10, 5, 5];
 
   uint256[] public plans = [0, 25*10**6, 50*10**6, 100*10**6, 300*10**6, 500*10**6, 1000*10**6, 3000*10**6, 5000*10**6, 10000*10**6];
@@ -154,12 +154,11 @@ contract BinarySystem is Admin{
     return true;
   }
 
-  function setDescuentoPorNoTrabajo(uint256 _porcentajePago, uint256 _personasBinario) public onlyOwner returns(uint256, uint256){
+  function setDescuento(uint256 _porcentajePago ) public onlyOwner returns(uint256){
 
     descuento = _porcentajePago;
-    personas = _personasBinario;
 
-    return (porcent.mul(_porcentajePago).div(100), _personasBinario);
+    return (porcent.mul(_porcentajePago).div(100) );
 
   }
 
